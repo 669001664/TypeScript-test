@@ -1,5 +1,10 @@
 let a = 5;
 let b = 'abc';
 let c = true;
-console.log(a, b, c);
+let arr = [11, 22, 33];
+arr.push(true);
+let tuple = ['abc', 123, true];
+tuple.push('bbbb');
+console.log(a, b, c, arr);
+console.log(tuple);
 export {};
