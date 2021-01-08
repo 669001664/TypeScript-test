@@ -33,4 +33,21 @@ console.log(tuple);
         
 //     }
 // }
+let x1 = 5//类型推论为 number
+let x2 = 'abc'//string
+let x3 = [123,23,433]//number数组
+let x4 = ['abc', 123, true]
+x4.push(5)
+class Animal{ }
+class Dog extends Animal{}
+class Cat extends Animal{}
+class Finsh extends Animal{}
+let arr2 = [new Dog(), new Cat()]//(Dog | Cat)
+arr2.push(new Finsh())
+console.log(arr2);
+
+
+window.onmousedown = function(mouseEvent) {
+    console.log(mouseEvent.button);  //<- Error
+};
 export {}
